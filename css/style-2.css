@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+a:hover {
+  color: #0065FC;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+/*********************
+*** resultat Section ***
+**********************/
+
+#search-resultat {
+  padding: 0 30px;
+  display: flex;
+  column-gap: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/*** Hebergement Section ***/
+
+#resultat {
+  width: 66.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#resultat-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-bottom: 30px;
+}
+
+#resultat-list .card {
+  max-height: 180px;
+  flex: 1 0 30%;
+}
+
+/******************
+*** Styles Class **
+*******************/
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.card {
+  min-width: 190px;
+  font-size: 90%;
+}
+
+.card a {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  transition: all .3s ease-in-out;
+}
+
+.card:hover a {
+  transform: perspective(500px) translateZ(20px);
+  color: inherit;
+}
+
+.card-border a {
+  border: 4px solid #FFFFFF;
+}
+
+.card-border:hover a {
+  border: 4px solid #DEEBFF;
+}
+
+.card h4,
+.card p,
+.card .row-stars {
+  margin: 3px;
+}
+
+.card-cover {
+  overflow: hidden;
+}
+
+.card-cover img {
+  height: 300px;
+  width: 300px;
+  min-width: 100%;
+  max-width: 100px;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 7px 13px;
+  background-color: #FFFFFF;
+  transition: all .3s ease-in-out;
+}
+
+.card:hover .card-content {
+  background: #DEEBFF;
+}
+
+.card .card-content p {
+  flex-grow: 1;
+}
+
+.card.card-horizontal a {
+  flex-direction: row;
+}
+
+.card.card-horizontal a .card-cover {
+  object-fit: cover;
+  height: 100%;
+  flex: 1 1 40%;
+}
+
+.card.card-horizontal a .card-content {
+  flex: 1 1 60%;
+}
+
+.card.card-horizontal a .card-cover img {
+  height: 100%;
+}
+
+.box {
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  margin: 0;
+  padding: 30px;
+}
+
+.box ul {
+  margin: 0;
+  padding: 0;
+}
+
+.box h2 {
+  margin-bottom: 20px;
+}
+
+.box h2 span {
+  float: right;
+  font-size: 20px;
+}
+
+.row-1 {
+  height: 150px;
+}
+
+.row-2 {
+  height: 185px;
+}
+
+.row-3 {
+  height: 220px;
+}
+
+.row-4 {
+  height: 400px;
+}
+
+.row-stars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+
+.row-stars li {
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;
+  color: #F2F2F2;
+}
+
+.star-active {
+  color: #0065FC!important;
+}
